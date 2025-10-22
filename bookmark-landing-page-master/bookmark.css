@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*Header*/
+header{
+    display: flex;
+    gap: 200px;
+    padding-top: 30px;
+}
+.nav{
+    display: none;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;   
+    gap: 20px;
+}
+
+.nav ul a{
+    color: #000;
+}
+header button{
+    padding: 8px 20px;
+    font-size: 12px;
+    color: white;
+    background-color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+    border-radius: 5px;
+}
+ /*Hero*/ 
+ .about .hero-title{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 30px;
+ }
+/*Footer*/
+footer{
+    width: 100%;
+    height: auto;
+}
+.join{
+    background-color: hsl(231, 69%, 50%);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center ;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.join p{
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 20px;
+    letter-spacing: 4px;
+}
+.join button{
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border: none;
+    padding: 12px 92px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.join input[type="email"]{
+    background-color: white;
+    border: none;
+    padding: 12px 45px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.join input[type="email"]::placeholder{
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.footer-nav{
+    background-color: hsl(229, 31%, 21%) ;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    height: auto;
+}
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+}
+nav a{
+    color: white;
+    text-decoration: none;   
+}
+.social-icons{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    gap: 30px;
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    /*Header*/
+    .menu-icon{
+        display: none;
+    }
+    header .nav{
+        display: flex;
+        gap: 20px;
+    }
+    header{
+        display: flex;
+        
+    }
+    .nav button{
+        margin-left: 30px;
+    }
+   
+
+    .footer-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 100px ;
+    }
+    .join button{
+        padding: 12px 20px;
+        cursor: pointer;
+    }
+    .left{
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+    }
+    .join input[type="email"]{
+        width: 300px;
+    }
+    .footer-nav ul{
+        flex-direction: row;
+        gap: 50px;
+        padding-top: 0px;
+    }
+    nav ul a:hover{
+        color: hsl(0, 94%, 66%);
+        cursor: pointer;
+    }
+}
